@@ -27,7 +27,7 @@ const ContactUsScreen = ({ navigation }) => {
     return (
 
             
-
+<ScrollView>
         <View style={styles.container}>
             <View style={styles.textContainer}>
                  <Text style={styles.text}>Contact us</Text>
@@ -51,6 +51,7 @@ const ContactUsScreen = ({ navigation }) => {
                 />
             </View>
         </View>
+ </ScrollView>
     );
 };
 
@@ -120,6 +121,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         borderWidth: 1,
         borderColor: "#313B74",
+        padding: 10,
     },
     mapContent: {
         flex: 1,
