@@ -9,4 +9,10 @@ module.exports = {
     'react-native-reanimated/plugin',
    
   ],
+<<<<<<< HEAD
 };
+  presets: ['module:@react-native/babel-preset'],
+};
+=======
+};
+>>>>>>> d816f48 (Test Commit)
