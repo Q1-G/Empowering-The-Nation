@@ -3,8 +3,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-
-import HomeScreen from './screens/Home';
+import { Image } from 'react-native';
+//import HomeScreen from './screens/Home';
+import HomeScreen from './screens/HomeNavTest';
 import FirstAidScreen from './screens/FirstAid';
 import SewingScreen from './screens/Sewing';
 import LandscapingScreen from './screens/Landscaping';
@@ -21,6 +22,15 @@ import WeekSumm from './screens/WeekSumm';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
+
+function LogoImage() {
+  return (
+      <Image
+        style={{ left: "209%", width: 50, height: 50 }}
+        source={require('./assets/companyLogo.png')}
+      />
+  );
+}
 
 const ScreenStackNavigator= () => {
   return( 
@@ -45,7 +55,7 @@ const ScreenStackNavigator= () => {
 const DrawerNavigator= () => {
   return( 
 <Drawer.Navigator initialRouteName="Home">
-<Drawer.Screen name="Home" component={HomeScreen} options={{title: 'Home', headerTitle:'',
+<Drawer.Screen name="Home" component={HomeScreen} options={{title: 'Home', headerTitle: ()=><LogoImage/>,
           headerStyle: {
             backgroundColor: '#313b74',
           },
@@ -53,28 +63,28 @@ const DrawerNavigator= () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-          <Drawer.Screen name="6 Month Courses" component={SixMonthSumm} options={{title: 'Six Month Courses', headerTitle:'', headerStyle: {
+          <Drawer.Screen name="6 Month Courses" component={SixMonthSumm} options={{title: 'Six Month Courses', headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-          <Drawer.Screen name="6 Week Courses" component={WeekSumm} options={{title: 'Six Week Courses', headerTitle:'', headerStyle: {
+          <Drawer.Screen name="6 Week Courses" component={WeekSumm} options={{title: 'Six Week Courses', headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-          <Drawer.Screen name="Cart" component={CalculatorScreen} options={{title: 'Cart', headerTitle:'', headerStyle: {
+          <Drawer.Screen name="Cart" component={CalculatorScreen} options={{title: 'Cart', headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-        <Drawer.Screen name="Contact Us" component={ContactUsScreen} options={{title: 'Contact Us', headerTitle:'', headerStyle: {
+        <Drawer.Screen name="Contact Us" component={ContactUsScreen} options={{title: 'Contact Us', headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
@@ -87,6 +97,7 @@ const DrawerNavigator= () => {
     </Drawer.Navigator>
   );
 };
+
 
 
 const App= () => {
