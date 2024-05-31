@@ -7,6 +7,5 @@ module.exports = {
     '@babel/plugin-transform-object-rest-spread',
     '@babel/plugin-transform-async-generator-functions',
     'react-native-reanimated/plugin',
-   
   ],
 };

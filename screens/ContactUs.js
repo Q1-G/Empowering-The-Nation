@@ -29,8 +29,8 @@ const ContactUsScreen = ({ navigation }) => {
             
 <ScrollView>
         <View style={styles.container}>
-            <View style={styles.textContainer}>
-                 <Text style={styles.text}>Contact us</Text>
+            <View style={styles.monthContainer}>
+                 <Text style={styles.monthText}>Contact us</Text>
             </View>
             <SelectList 
                 setSelected={handleSelect} 
@@ -60,48 +60,45 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "flex-start",
-        paddingTop: 50,
-        paddingHorizontal: 20,
-        backgroundColor: "#313B74",
+        paddingTop: 8,
+        //paddingHorizontal: 20,
+        backgroundColor: "#ffffff",
     },
-    textContainer: {
-        justifyContent: "flex-start",
-        backgroundColor: "#ffff",
+    section: {
+        backgroundColor: '#ffff',
+        padding: 12,
+      },
+    monthContainer: {
+        backgroundColor: '#313b74',
+        width: '50%',
+        marginTop: 20,
+        marginBottom: 20,
         padding: 10,
-        width: "100%",
-        
+      alignSelf: "flex-start"
     },
-    text: {
-        fontSize: 20,
-        fontWeight: "normal",
-        marginTop: 4,
-        marginBottom: 16,
-        backgroundColor: "#313B74",
-        color: "#fff",
-        marginRight: 290,
-        marginLeft: 0,
-        paddingLeft: 130,
-        paddingRight: 10,
-        paddingTop: 5,
-        paddingBottom: 5,
-    },
+    monthText: {
+        color: 'white',
+        fontWeight: 'normal',
+        left: '48%',
+      },
     selectBox: {
         borderColor: '#525C91',
         borderWidth: 1,
         borderRadius: 5,
         marginTop: 20,
         width: '100%',
-        backgroundColor: "#525C91",
-        color: "#fff"
+        backgroundColor: "#ffffff",
+        color: "#ffffff",
     },
     dropdown: {
         borderColor: '#525C91',
         borderWidth: 1,
         backgroundColor: "#313B74",
+        color: "#ffffff",
     },
     dropdownText: {
         fontSize: 16,
-        color: "#fff",
+        color: "#ffffff",
     },
     address: {
         marginTop: 20,

@@ -124,7 +124,7 @@ const CalculatorScreen = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.section}>
-        <Text style={styles.header}>Quote</Text>
+        <Text style={styles.monthText}>Quote</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>Calculate Fees</Text>
@@ -323,6 +323,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 15,
+  },
+  monthText: {
+    color: 'white',
+    fontWeight: 'normal',
+    left: '30%',
   },
 });
 

@@ -53,83 +53,36 @@ const DrawerNavigator= () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-      <Drawer.Screen name="FirstAid" component={FirstAidScreen} options={{title: 'First Aid', headerTitle:'', headerStyle: {
+          <Drawer.Screen name="6 Month Courses" component={SixMonthSumm} options={{title: 'Six Month Courses', headerTitle:'', headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-      <Drawer.Screen name="Sewing" component={SewingScreen} options={{title: 'Sewing', headerTitle:'',  headerStyle: {
+          <Drawer.Screen name="6 Week Courses" component={WeekSumm} options={{title: 'Six Week Courses', headerTitle:'', headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-      <Drawer.Screen name="Landscaping" component={LandscapingScreen} options={{title: 'Landscaping', headerTitle:'', headerStyle: {
+          <Drawer.Screen name="Cart" component={CalculatorScreen} options={{title: 'Cart', headerTitle:'', headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-      <Drawer.Screen name="LifeSkills" component={LifeSkillsScreen} options={{title: 'Life Skills', headerTitle:'', headerStyle: {
+        <Drawer.Screen name="Contact Us" component={ContactUsScreen} options={{title: 'Contact Us', headerTitle:'', headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-          <Drawer.Screen name="MonthCourses" component={SixMonthSumm} options={{title: 'Six Month Courses', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
-        <Drawer.Screen name="ContactUs" component={ContactUsScreen} options={{title: 'Contact Us', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
-        <Drawer.Screen name="Calculator" component={CalculatorScreen} options={{title: 'Fee Calculator', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
-        <Drawer.Screen name="ChildMinding" component={ChildMindingScreen} options={{title: 'Child Minding', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
-        <Drawer.Screen name="Cooking" component={CookingScreen} options={{title: 'Cooking', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
-        <Drawer.Screen name="GardenMaintenance" component={GardenMaintenanceScreen} options={{title: 'Garden Maintenance', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
-        <Drawer.Screen name="WeekSummary" component={WeekSumm} options={{title: 'Six Week Courses', headerTitle:'', headerStyle: {
-            backgroundColor: '#313b74',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },}}/>
+        
+        
 
     </Drawer.Navigator>
   );
