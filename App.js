@@ -17,9 +17,6 @@ import CookingScreen from './screens/Cooking';
 import GardenMaintenanceScreen from './screens/GardenMaintenance';
 import WeekSumm from './screens/WeekSumm';
 
-
-
-const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 function LogoImage() {
@@ -31,24 +28,6 @@ function LogoImage() {
   );
 }
 
-const ScreenStackNavigator= () => {
-  return( 
-  <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component= {HomeScreen}/>
-        <Stack.Screen name="FirstAidCourse" component= {FirstAidScreen}/>
-        <Stack.Screen name="SewingCourse" component={SewingScreen} />
-        <Stack.Screen name="LandscapingCourse" component={LandscapingScreen} />
-        <Stack.Screen name="LifeSkillsCourse" component={LifeSkillsScreen} />
-        <Stack.Screen name="ContactUs" component={ContactUsScreen} />
-        <Stack.Screen name="Calculator" component={CalculatorScreen} />
-        <Stack.Screen name="SixMonthSummary" component={SixMonthSumm} />
-        <Stack.Screen name="ChildMinding" component={ChildMindingScreen} />
-        <Stack.Screen name="Cooking" component={CookingScreen} />
-        <Stack.Screen name="GardenMaintenance" component={GardenMaintenanceScreen} />
-        <Stack.Screen name="SixWeekSummary" component={WeekSumm} />
-      </Stack.Navigator>
-  );
-};
 
 const DrawerNavigator= () => {
   return( 
@@ -83,6 +62,13 @@ const DrawerNavigator= () => {
             fontWeight: 'bold',
           },}}/>
         <Drawer.Screen name="Contact Us" component={ContactUsScreen} options={{title: 'Contact Us', headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
+          <Drawer.Screen name="Child Minding" component={ChildMindingScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',

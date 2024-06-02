@@ -8,7 +8,7 @@ const WeekSumm = ({ navigation }) => {
             </View>
              <View style={styles.buttonContainer}>
                  <View style={styles.buttonWrapper}>
-                     <Button title="Child Minding" onPress={() => navigation.jumpTo("ChildMinding")} color="#525C91" />
+                     <Button title="Child Minding" onPress={() => navigation.jumpTo("Child Minding")} color="#525C91" />
                  </View>
                  <View style={styles.buttonSpacer} />
                  <View style={styles.buttonWrapper}>
