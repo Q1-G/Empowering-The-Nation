@@ -4,8 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Image } from 'react-native';
-//import HomeScreen from './screens/Home';
-import HomeScreen from './screens/HomeNavTest';
+import HomeScreen from './screens/Home';
 import FirstAidScreen from './screens/FirstAid';
 import SewingScreen from './screens/Sewing';
 import LandscapingScreen from './screens/Landscaping';
@@ -47,7 +46,6 @@ const ScreenStackNavigator= () => {
         <Stack.Screen name="Cooking" component={CookingScreen} />
         <Stack.Screen name="GardenMaintenance" component={GardenMaintenanceScreen} />
         <Stack.Screen name="SixWeekSummary" component={WeekSumm} />
-      
       </Stack.Navigator>
   );
 };
@@ -63,14 +61,14 @@ const DrawerNavigator= () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-          <Drawer.Screen name="6 Month Courses" component={SixMonthSumm} options={{title: 'Six Month Courses', headerTitle:()=><LogoImage/>, headerStyle: {
+          <Drawer.Screen name="MonthCourses" component={SixMonthSumm} options={{title: 'Six Month Courses', headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-          <Drawer.Screen name="6 Week Courses" component={WeekSumm} options={{title: 'Six Week Courses', headerTitle:()=><LogoImage/>, headerStyle: {
+          <Drawer.Screen name="WeekSummary" component={WeekSumm} options={{title: 'Six Week Courses', headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
           headerTintColor: '#fff',

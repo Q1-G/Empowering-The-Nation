@@ -8,12 +8,10 @@ import {
   View,
   Image,
 } from 'react-native';
-import { createStackNavigator } from '@react-navigation/stack';
 import WeekSumm from './WeekSumm';
 import SixMonthSumm from './SixMonthSumm';
 import ContactUsScreen from './ContactUs';
 
-const Stack = createStackNavigator();
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -39,7 +37,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.buttonContainer}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate(WeekSumm)}>
+                onPress={() => navigation.navigate('WeekSummary')}>
                 <Text style={styles.buttonText}>6 Week Courses</Text>
               </TouchableOpacity>
             </View>
@@ -54,7 +52,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.buttonContainer}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate(SixMonthSumm)}>
+                onPress={() => navigation.navigate("MonthCourses")}>
                 <Text style={styles.buttonText}>6 Month Courses</Text>
               </TouchableOpacity>
             </View>
@@ -69,7 +67,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.buttonContainer}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate(ContactUsScreen)}>
+                onPress={() => navigation.navigate("Contact Us")}>
                 <Text style={styles.buttonText}>Contact Us</Text>
               </TouchableOpacity>
           </View>
