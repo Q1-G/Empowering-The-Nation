@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import {CheckBox} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/native';
-import { CourseContext, CourseProvider } from './CourseContext';
 
 const CalculatorScreen = () => {
   const [name, setName] = useState('');
@@ -26,11 +25,11 @@ const CalculatorScreen = () => {
 
   const courses = {
     'First Aid': 1500,
-    Sewing: 1500,
-    Landscaping: 1500,
+    'Sewing': 1500,
+    'Landscaping': 1500,
     'Life Skills': 1500,
     'Child Minding': 750,
-    Cooking: 750,
+    'Cooking': 750,
     'Garden Maintenance': 750,
   };
 
@@ -38,8 +37,10 @@ const CalculatorScreen = () => {
     let newSelectedCourses = [...selectedCourses];
     if (newSelectedCourses.includes(course)) {
       newSelectedCourses = newSelectedCourses.filter(item => item !== course);
+      console.log('Course checkbox is off');
     } else {
       newSelectedCourses.push(course);
+      console.log('Course checkbox is on');
     }
     setSelectedCourses(newSelectedCourses);
   };

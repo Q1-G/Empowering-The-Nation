@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext,} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -6,22 +6,21 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Image,
   Alert,
 } from 'react-native';
 
+import { selectedCourses,useCourseContext } from './CourseContext';
 
-function quoteHandle(){
-  
-  console.log("Quote Added");
-  Alert.alert('Quote',
-  `Your course has been added to Cart`,  )
-  
-};
+const SewingScreen = ({ navigation, route }) => {
 
+const {handleCheckboxChange} = useCourseContext();
 
+  function quoteHandle(){
+    console.log("Quote Added");
+    Alert.alert('Quote',
+    `Your course has been added to Cart`,)
+  };
 
-const SewingScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
           <ScrollView>
