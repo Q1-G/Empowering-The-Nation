@@ -8,11 +8,11 @@ const SixMonthSumm = ({ navigation }) => {
             </View>
              <View style={styles.buttonContainer}>
                  <View style={styles.buttonWrapper}>
-                     <Button title="First Aid" onPress={() => navigation.navigate("FirstAidCourse")} color="#525C91" />
+                     <Button title="First Aid" onPress={() => navigation.navigate("First Aid")} color="#525C91" />
                  </View>
                  <View style={styles.buttonSpacer} />
                  <View style={styles.buttonWrapper}>
-                     <Button title="Sewing" onPress={() => navigation.navigate("SewingCourse")} color="#525C91" />
+                     <Button title="Sewing" onPress={() => navigation.navigate("Sewing")} color="#525C91" />
                  </View>
                  <View style={styles.buttonSpacer} />
                  <View style={styles.buttonWrapper}>
@@ -20,7 +20,7 @@ const SixMonthSumm = ({ navigation }) => {
                  </View>
                  <View style={styles.buttonSpacer} />
                  <View style={styles.buttonWrapper}>
-                     <Button title="Life Skills" onPress={() => navigation.navigate("LifeSkills")} color="#525C91" />
+                     <Button title="Life Skills" onPress={() => navigation.navigate("Life Skills")} color="#525C91" />
                  </View>
              </View>
          </View>

@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {CheckBox} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/native';
+import { CourseContext } from './CourseContext';
 
 const CalculatorScreen = () => {
   const [name, setName] = useState('');
@@ -21,6 +22,7 @@ const CalculatorScreen = () => {
   const [errors, setErrors] = useState({name: '', phone: '', email: ''});
 
   const navigation = useNavigation();
+  
 
   const courses = {
     'First Aid': 1500,

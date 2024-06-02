@@ -1,7 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Image } from 'react-native';
 import HomeScreen from './screens/Home';
@@ -16,6 +15,7 @@ import ChildMindingScreen from './screens/ChildMinding';
 import CookingScreen from './screens/Cooking';
 import GardenMaintenanceScreen from './screens/GardenMaintenance';
 import WeekSumm from './screens/WeekSumm';
+import { CourseProvider } from './screens/CourseContext';
 
 const Drawer = createDrawerNavigator();
 
@@ -68,6 +68,7 @@ const DrawerNavigator= () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
+          {/* Code for 6 week navigation */}
           <Drawer.Screen name="Child Minding" component={ChildMindingScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
             backgroundColor: '#313b74',
           },
@@ -75,9 +76,49 @@ const DrawerNavigator= () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },}}/>
-        
-        
-
+        <Drawer.Screen name="Cooking" component={CookingScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
+          <Drawer.Screen name="Garden Maintenance" component={GardenMaintenanceScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
+        {/* Code for 6 month screens */}
+        <Drawer.Screen name="First Aid" component={FirstAidScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
+          <Drawer.Screen name="Sewing" component={SewingScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
+          <Drawer.Screen name="Landscaping" component={LandscapingScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
+          <Drawer.Screen name="Life Skills" component={LifeSkillsScreen} options={{drawerLabel:()=>null, drawerItemStyle:{display:'none'}, headerTitle:()=><LogoImage/>, headerStyle: {
+            backgroundColor: '#313b74',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },}}/>
     </Drawer.Navigator>
   );
 };
@@ -86,11 +127,12 @@ const DrawerNavigator= () => {
 
 const App= () => {
   return(
-    
+    <CourseProvider>
     <NavigationContainer>
 
       <DrawerNavigator/>
     </NavigationContainer>
+    </CourseProvider>
   );
 };
 

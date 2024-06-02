@@ -7,7 +7,16 @@ import {
   TouchableOpacity,
   View,
   Image,
+  Alert,
 } from 'react-native';
+
+
+function quoteHandle(){
+  console.log("Quote Added");
+  Alert.alert('Quote',
+  `Your course has been added to Cart`,  )
+  
+};
 
 
 
@@ -34,7 +43,7 @@ const SewingScreen = ({ navigation }) => {
 
               </Text>
                <View style={styles.buttonContainer}>
-               <TouchableOpacity style={styles.button} onPress={() => navigation.jumpTo("Calculator")} >
+               <TouchableOpacity style={styles.button} onPress={quoteHandle} >
   <Text style={styles.buttonText}>Add To Quote</Text>
 </TouchableOpacity>
             </View>
