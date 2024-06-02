@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useContext} from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import {CheckBox} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/native';
-import { CourseContext } from './CourseContext';
+import { CourseContext, CourseProvider } from './CourseContext';
 
 const CalculatorScreen = () => {
   const [name, setName] = useState('');
