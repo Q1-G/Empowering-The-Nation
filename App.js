@@ -127,6 +127,7 @@ const DrawerNavigator= () => {
 
 const App= () => {
   return(
+  //Provider sharing context to all pages
     <CourseProvider>
     <NavigationContainer>
 
