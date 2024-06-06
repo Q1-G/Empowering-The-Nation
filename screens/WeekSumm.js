@@ -1,24 +1,22 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 
-const SixMonthCourses = ({ navigation }) => {
+const WeekSumm = ({ navigation }) => {
     return (
         <View style={styles.container}>
-             <Text style={styles.text}>Six month courses</Text>
+             <View style={styles.weekContainer}>
+              <Text style={styles.weekText}>6 Week Courses </Text>
+            </View>
              <View style={styles.buttonContainer}>
                  <View style={styles.buttonWrapper}>
-                     <Button title="First Aid" onPress={() => navigation.jumpTo("FirstAidScreen")} color="#525C91" />
+                     <Button title="Child Minding" onPress={() => navigation.jumpTo("Child Minding")} color="#525C91" />
                  </View>
                  <View style={styles.buttonSpacer} />
                  <View style={styles.buttonWrapper}>
-                     <Button title="Sewing" onPress={() => navigation.jumpTo("SewingScreen")} color="#525C91" />
+                     <Button title="Cooking" onPress={() => navigation.jumpTo("Cooking")} color="#525C91" />
                  </View>
                  <View style={styles.buttonSpacer} />
                  <View style={styles.buttonWrapper}>
-                     <Button title="Landscaping" onPress={() => navigation.jumpTo("LandscapingScreen")} color="#525C91" />
-                 </View>
-                 <View style={styles.buttonSpacer} />
-                 <View style={styles.buttonWrapper}>
-                     <Button title="Life Skills" onPress={() => navigation.jumpTo("LifeSkillsScreen")} color="#525C91" />
+                     <Button title="Garden Maintenance" onPress={() => navigation.jumpTo("Garden Maintenance")} color="#525C91" />
                  </View>
              </View>
          </View>
@@ -26,24 +24,26 @@ const SixMonthCourses = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+    weekContainer: {
+        backgroundColor: '#313b74',
+        width: '50%',
+        marginTop: 20,
+        marginBottom: 20,
+        padding: 10,
+      alignSelf: "flex-start"
+      },
+      weekText: {
+        color: 'white',
+        fontWeight: 'normal',
+        left: '30%',
+      },
+   
     container: {
         flex: 1,
         alignItems: "center",
         justifyContent: "flex-start",
     },
-    text: {
-        fontSize: 20,
-        fontWeight: "normal",
-        marginTop: 50,
-        marginBottom: 16,
-        backgroundColor: "#313B74",
-        color: "#ffff",
-        marginRight: 315,
-        paddingLeft: 110,
-        paddingRight: 10,
-        paddingTop: 5,
-        paddingBottom: 5,
-    },
+    
     buttonContainer: {
         marginTop: 10,
         width: "100%",
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default SixMonthCourses;
+export default WeekSumm;

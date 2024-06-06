@@ -1,0 +1,126 @@
+import React from 'react';
+import {
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Image,
+} from 'react-native';
+
+
+
+const HomeScreen = ({ navigation }) => {
+  return (
+    <SafeAreaView>
+      <ScrollView>
+      <View style={styles.logocontainer}>
+            <Image
+              source={require('../Assets/companyLogo.png')}
+              style={{
+                resizeMode: 'center',
+          height: 200,
+          width: '50',
+          margin: 10,
+  }}
+            />
+        </View>
+        <View style={styles.container}>
+          <View style={styles.imageContainer}>
+            <Image
+              source={require('../Assets/homeSixWeek.jpg')}
+              style={styles.image}
+            />
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate('Six Week Courses')}>
+                <Text style={styles.buttonText}>6 Week Courses</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+        <View style={styles.container}>
+          <View style={styles.imageContainer}>
+            <Image
+              source={require('../Assets/homeSixMonth.jpg')}
+              style={styles.image}
+            />
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate('Six Month Courses')}>
+                <Text style={styles.buttonText}>6 Month Courses</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+        <View style={styles.container}>
+          <View style={styles.imageContainer}>
+            <Image
+              source={require('../Assets/homecontact.jpg')}
+              style={styles.image}
+            />
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate('Contact Us')}>
+                <Text style={styles.buttonText}>Contact Us</Text>
+              </TouchableOpacity>
+          </View>
+        </View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    marginTop: 32,
+  },
+  
+  imageContainer: {
+    flex: 1,
+    marginRight: 8,
+    position: 'relative',
+  },
+  logoContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '50%',
+  },
+ 
+  image: {
+    width: '100%',
+    height: 200,
+    resizeMode: 'cover',
+  },
+  buttonContainer: {
+    position: 'absolute',
+    left: 0,
+    top: '75%',
+    transform: [{ translateY: -20 }],
+  },
+  button: {
+    backgroundColor: '#313b74',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 2,
+    width: 240,
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    left: '50%',
+
+  },
+});
+
+export default HomeScreen;

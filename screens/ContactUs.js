@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet} from "react-native";
+import { View, Text, StyleSheet, ScrollView} from "react-native";
 import { SelectList } from 'react-native-dropdown-select-list';
 import { WebView } from 'react-native-webview';
 
-const ContactUs = () => {
+const ContactUsScreen = ({ navigation }) => {
     const [selected, setSelected] = useState("");
     const [address, setAddress] = useState("");
 
@@ -25,12 +25,9 @@ const ContactUs = () => {
     };
 
     return (
-
-            
-
         <View style={styles.container}>
             <View style={styles.textContainer}>
-                 <Text style={styles.text}>Contact us</Text>
+                <Text style={styles.text}>Contact us</Text>
             </View>
             <SelectList 
                 setSelected={handleSelect} 
@@ -57,18 +54,16 @@ const ContactUs = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center",
-        justifyContent: "flex-start",
+        backgroundColor: "#313B74",
         paddingTop: 50,
         paddingHorizontal: 20,
-        backgroundColor: "#313B74",
+        paddingBottom: 20,
     },
     textContainer: {
         justifyContent: "flex-start",
         backgroundColor: "#ffff",
         padding: 10,
         width: "100%",
-        
     },
     text: {
         fontSize: 20,
@@ -111,20 +106,20 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderColor: "#313B74",
         borderWidth: 1,
-        width:"100%",
+        width: "100%",
         height: 250,
     },
     mapContainer: {
-        width: '100%',
-        height: 400,
-        marginTop: 20,
+        flex: 1,
         borderWidth: 1,
         borderColor: "#313B74",
+        padding: 10,
+        marginBottom: 20, 
     },
     mapContent: {
         flex: 1,
-        backgroundColor: '#fff', 
+        backgroundColor: '#fff',
     },
 });
 
-export default ContactUs;
+export default ContactUsScreen;
