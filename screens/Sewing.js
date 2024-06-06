@@ -47,6 +47,11 @@ const {handleCheckboxChange} = useCourseContext();
   <Text style={styles.buttonText}>Add To Quote</Text>
 </TouchableOpacity>
             </View>
+            <View style={{paddingtop:2}}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.jumpTo("MonthCourses")} >
+  <Text style={styles.buttonText}>Go Back</Text>
+</TouchableOpacity>
+        </View>
             </View>
     
            

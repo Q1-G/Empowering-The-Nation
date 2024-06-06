@@ -36,6 +36,11 @@ const ChildMindingScreen = ({ navigation }) => {
 </TouchableOpacity>
 
           </View>
+          <View style={{paddingtop:2}}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.jumpTo('WeekSummary')} >
+  <Text style={styles.buttonText}>Go Back</Text>
+</TouchableOpacity>
+        </View>
         </View>
       </ScrollView>
     </SafeAreaView>

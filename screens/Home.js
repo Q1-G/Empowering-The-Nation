@@ -28,6 +28,12 @@ const HomeScreen = ({ navigation }) => {
   }}
             />
         </View>
+        <View style={styles.container}> 
+              <Text>Empowering the Nation was established in 2018 and offers courses in Johannesburg.
+Hundreds of domestic workers and gardeners have been trained on both the six-month long
+Learnerships and six-week Short Skills Training Programmes to empower themselves and
+can provide more marketable skills.</Text>
+            </View>
         <View style={styles.container}>
           <View style={styles.imageContainer}>
             <Image
