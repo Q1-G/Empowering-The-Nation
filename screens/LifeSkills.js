@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {
+  Alert,
   SafeAreaView,
   ScrollView,
   StyleSheet,
@@ -8,14 +9,15 @@ import {
   View,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { CourseContext } from '../CourseContext'; 
+import { useCourseSelections } from '../CourseContext'; 
 
 const LifeSkillsScreen = () => {
   const navigation = useNavigation();
-  const { addSelectedCourse } = useContext(CourseContext); 
+  const { addSelectedCourse, getCourses } = useCourseSelections(); 
 
   const addCourseAndNavigate = () => {
     addSelectedCourse("Life Skills"); 
+    Alert.alert("Course added!");
     navigation.navigate("Calculator");
   };
 
@@ -43,9 +45,12 @@ const LifeSkillsScreen = () => {
                <Text style={styles.buttonText}>Add To Quote</Text>
                </TouchableOpacity>
             </View>
+            <View>
+           <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate("Six Month Courses")}}>
+  <Text style={styles.buttonText}>Go Back</Text>
+</TouchableOpacity>
+        </View>
             </View>
-    
-           
           </ScrollView>
         </SafeAreaView>
       );

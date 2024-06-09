@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, {useState, useContext} from 'react';
 import {
   View,
   Text,
@@ -8,18 +8,17 @@ import {
   Alert,
   ScrollView,
 } from 'react-native';
-import { CheckBox } from 'react-native-elements';
-import { useNavigation } from '@react-navigation/native';
-import { CourseContext } from '../CourseContext'; 
+import {CheckBox} from 'react-native-elements';
+import {useNavigation} from '@react-navigation/native';
+import {useCourseSelections} from '../CourseContext';
 
 const CalculatorScreen = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const { selectedCourses, addSelectedCourse, removeSelectedCourse, setSelectedCourses } = useContext(CourseContext); 
   const [calculatedTotal, setCalculatedTotal] = useState(null);
   const [discountPercentage, setDiscountPercentage] = useState(0);
-  const [errors, setErrors] = useState({ name: '', phone: '', email: '' });
+  const [errors, setErrors] = useState({name: '', phone: '', email: ''});
 
   const navigation = useNavigation();
 
@@ -33,7 +32,10 @@ const CalculatorScreen = () => {
     'Garden Maintenance': 750,
   };
 
-  const handleCheckboxChange = (course) => {
+const {getCourses, addSelectedCourse, removeSelectedCourse} = useCourseSelections();
+const selectedCourses = getCourses();
+
+  const handleCheckboxChange = course => {
     if (selectedCourses.includes(course)) {
       removeSelectedCourse(course);
     } else {
@@ -43,7 +45,7 @@ const CalculatorScreen = () => {
 
   const validateInputs = () => {
     let valid = true;
-    let newErrors = { name: '', phone: '', email: '' };
+    let newErrors = {name: '', phone: '', email: ''};
 
     if (name.trim() === '') {
       newErrors.name = 'Name is required';
@@ -117,13 +119,13 @@ const CalculatorScreen = () => {
     setSelectedCourses([]);
     setCalculatedTotal(null);
     setDiscountPercentage(0);
-    setErrors({ name: '', phone: '', email: '' });
+    setErrors({name: '', phone: '', email: ''});
   };
 
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.section}>
-        <Text style={styles.header}>Quote</Text>
+      <View style={styles.quoteContainer}>
+        <Text style={styles.qouteText}>Quote</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>Calculate Fees</Text>
@@ -225,6 +227,19 @@ const CalculatorScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  quoteContainer: {
+    backgroundColor: '#313b74',
+    width: '50%',
+    marginTop: 20,
+    marginBottom: 20,
+    padding: 10,
+  alignSelf: "flex-start"
+  },
+  qouteText: {
+    color: 'white',
+    fontWeight: 'normal',
+    left: '30%',
+  },
   container: {
     flex: 1,
     backgroundColor: '#ffffff',
@@ -326,6 +341,3 @@ const styles = StyleSheet.create({
 });
 
 export default CalculatorScreen;
-
-
-
