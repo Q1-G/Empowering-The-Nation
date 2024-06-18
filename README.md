@@ -21,6 +21,7 @@ To achieve this, the specifications requested was the creation of a mobile app a
 The following screens were required:
 
 - Home
+-- Logo
 - Summary of six-month Courses
 - Summary of six-week Courses
 - Details of each six-month course (separate page/screen for each course)
@@ -28,8 +29,12 @@ The following screens were required:
 - Calculate Total Fees
 - Contact Details
 
-These screens were required on both app and website. Navigation 
-# Getting Started
+These screens were required on both app and website. Navigation required each screen return to their previous page 
+
+## Submission
+
+Each member submitted a logo
+# Milestone 2
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
