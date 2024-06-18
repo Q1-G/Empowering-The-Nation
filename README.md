@@ -39,11 +39,6 @@ Matthew's wireframe and Quewin's logo was selected with colour corrections to de
 ## Design Changes
 The following screens were changed to better match the colorscheme and eliminate some white space
 
-### Logo
-Logo was redesigned with original colourscheme in mind, with adjustments to make it stand out
-
-![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/TransparentLogo.png "Redesigned Logo")
-
 ### Home Screen
 
 ![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe1.png "App Home Screen")
@@ -72,7 +67,18 @@ Logo was redesigned with original colourscheme in mind, with adjustments to make
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+### Logo
+Logo was redesigned with original colourscheme in mind, with adjustments to make it stand out from new background.
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/TransparentLogo.png "Redesigned Logo")
+
+# Milestone 4
+## How To Use App
+
+## Youtube Link
+<a href=https://youtu.be/lza6E4e7nNQ?feature=shared
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="Youtube Link" width="240" height="180" border="10" /></a>
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
