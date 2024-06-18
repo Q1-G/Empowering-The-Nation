@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">AwesomeProject</string>
+    <string name="app_name">Skills Training app</string>
+    <string name="app_description">Local SME providing skills training for domestic workers and gardeners. Empowering individuals through skills development and community growth.</string>
+    <string name="about_us_title">About Us</string>
+    <string name="about_us_description">We are a local SME initiated by Precious Radebe, dedicated to providing skills training for domestic workers and gardeners in the community.</string>
+    <string name="learn_skills">Learn how to sew, take care of children,cook,maintain gardens, landscape,life skils and first aid. </string>
+    <string name="short_courses"> Learn skills in only six months. Learn skills in only six weeks. </string>
 </resources>

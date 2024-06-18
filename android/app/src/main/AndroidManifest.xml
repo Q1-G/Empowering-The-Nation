@@ -9,6 +9,14 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+
+      <meta-data
+            android:name="description"
+            android:value="Local SME providing skills training for domestic workers and gardeners. Empowering individuals through skills development and community growth." />
+      <meta-data
+            android:name="keywords"
+            android:value="short courses in Johannesburg, short courses, skills training, domestic workers, gardeners, SME, community growth, education, empowerment, how to sew, first aid courses, South African recipies, how to change a diaper" />
+
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

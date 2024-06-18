@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {
+  Alert,
   SafeAreaView,
   ScrollView,
   StyleSheet,
@@ -8,16 +9,18 @@ import {
   View,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { CourseContext } from '../CourseContext'; 
+import { useCourseSelections } from '../CourseContext'; 
 
 const FirstAidScreen = () => {
   const navigation = useNavigation();
-  const { addSelectedCourse } = useContext(CourseContext); 
+  const { addSelectedCourse, getCourses } = useCourseSelections(); 
 
-  const addCourseAndNavigate = () => {
+  const addCourseHandle = () => {
     addSelectedCourse("First Aid"); 
+    Alert.alert("Course added!");
     navigation.navigate("Calculator");
   };
+
 
   return (
     <SafeAreaView>
@@ -40,10 +43,15 @@ const FirstAidScreen = () => {
             • Respiratory distress e.g., Choking, blocked airway
           </Text>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button} onPress={addCourseAndNavigate}>
+            <TouchableOpacity style={styles.button} onPress={addCourseHandle}>
               <Text style={styles.buttonText}>Add To Quote</Text>
             </TouchableOpacity>
           </View>
+          <View>
+           <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate("Six Month Courses")}}>
+  <Text style={styles.buttonText}>Go Back</Text>
+</TouchableOpacity>
+        </View>
         </View>
       </ScrollView>
     </SafeAreaView>

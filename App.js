@@ -16,6 +16,7 @@ import ChildMindingScreen from './screens/ChildMinding';
 import CookingScreen from './screens/Cooking';
 import GardenMaintenanceScreen from './screens/GardenMaintenance';
 import { CourseProvider } from './CourseContext';
+import AboutScreen from './screens/AboutUs';
 
 const Drawer = createDrawerNavigator();
 
@@ -49,6 +50,7 @@ export default function App() {
           }}
         >
           <Drawer.Screen name="Home" component={HomeScreen} />
+          <Drawer.Screen name="About Us" component={AboutScreen} />
           <Drawer.Screen name="Six Month Courses" component={SixMonthSumm} />
           <Drawer.Screen name="Six Week Courses" component={WeekSumm} />
           <Drawer.Screen name="Calculator" component={Calculator} />

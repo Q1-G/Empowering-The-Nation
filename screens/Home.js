@@ -8,23 +8,19 @@ import {
   View,
   Image,
 } from 'react-native';
-
+import WeekSumm from './WeekSumm';
+import SixMonthSumm from './SixMonthSumm';
+import ContactUsScreen from './ContactUs';
 
 
 const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView>
       <ScrollView>
-      <View style={styles.logocontainer}>
-            <Image
-              source={require('../Assets/companyLogo.png')}
-              style={{
-                resizeMode: 'center',
-          height: 200,
-          width: '50',
-          margin: 10,
-  }}
-            />
+     
+      <View style={styles.sloganContainer}>
+          <Text style={styles.sloganText}>Empowering The Nation strives to empower individuals through skills development.  </Text>
+        
         </View>
         <View style={styles.container}>
           <View style={styles.imageContainer}>
@@ -50,7 +46,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.buttonContainer}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate('Six Month Courses')}>
+                onPress={() => navigation.navigate("Six Month Courses")}>
                 <Text style={styles.buttonText}>6 Month Courses</Text>
               </TouchableOpacity>
             </View>
@@ -65,7 +61,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.buttonContainer}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate('Contact Us')}>
+                onPress={() => navigation.navigate("Contact Us")}>
                 <Text style={styles.buttonText}>Contact Us</Text>
               </TouchableOpacity>
           </View>
@@ -84,22 +80,30 @@ const styles = StyleSheet.create({
     marginTop: 32,
   },
   
+  sloganContainer: {
+    backgroundColor: '#313b74',
+    width: '100%',
+    padding: 10,
+  },
+  sloganText: {
+    color: 'white',
+    fontWeight: 'bold',
+    padding: 20,
+    textAlign: 'center',
+    fontStyle: 'italic'
+
+  },
+
   imageContainer: {
     flex: 1,
     marginRight: 8,
     position: 'relative',
-  },
-  logoContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '50%',
+    marginBottom: 50,
   },
  
   image: {
     width: '100%',
-    height: 200,
+    height: 210,
     resizeMode: 'cover',
   },
   buttonContainer: {

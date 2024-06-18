@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView} from "react-native";
 import { SelectList } from 'react-native-dropdown-select-list';
+import { SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from 'react-native-webview';
 
 const ContactUsScreen = ({ navigation }) => {
@@ -25,10 +26,11 @@ const ContactUsScreen = ({ navigation }) => {
     };
 
     return (
-        <View style={styles.container}>
-            <View style={styles.textContainer}>
-                <Text style={styles.text}>Contact us</Text>
+        <SafeAreaView style={styles.container}>
+            <View style={styles.monthContainer}>
+              <Text style={styles.monthText}>Contact Us</Text>
             </View>
+            <View style={styles.containerTwo}>
             <SelectList 
                 setSelected={handleSelect} 
                 data={data} 
@@ -46,14 +48,21 @@ const ContactUsScreen = ({ navigation }) => {
                     source={{ uri: 'https://www.google.com/maps/d/embed?mid=1UfBwMu47INh-_xmNGtj79z1y0_mRpFQ&ehbc=2E312F&noprof=1' }}
                     style={styles.mapContent}
                 />
+                </View>
             </View>
-        </View>
+        </SafeAreaView>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: "#ffffff",
+        paddingTop: 50,
+        paddingBottom: 20,
+    },
+    containerTwo: {
+        flex: 2,
         backgroundColor: "#313B74",
         paddingTop: 50,
         paddingHorizontal: 20,
@@ -62,8 +71,8 @@ const styles = StyleSheet.create({
     textContainer: {
         justifyContent: "flex-start",
         backgroundColor: "#ffff",
-        padding: 10,
-        width: "100%",
+        padding: 5,
+        width: "50%",
     },
     text: {
         fontSize: 20,
@@ -110,16 +119,29 @@ const styles = StyleSheet.create({
         height: 250,
     },
     mapContainer: {
-        flex: 1,
+        flex:1,
         borderWidth: 1,
         borderColor: "#313B74",
         padding: 10,
         marginBottom: 20, 
     },
     mapContent: {
-        flex: 1,
+        flex:1,
         backgroundColor: '#fff',
     },
+    monthContainer: {
+        backgroundColor: '#313b74',
+        width: '50%',
+        marginTop: 20,
+        marginBottom: 20,
+        padding: 10,
+      alignSelf: "flex-start"
+      },
+      monthText: {
+        color: 'white',
+        fontWeight: 'normal',
+        left: '30%',
+      },
 });
 
 export default ContactUsScreen;
