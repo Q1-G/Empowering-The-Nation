@@ -104,3 +104,10 @@ a
 ## Youtube Link
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/lza6E4e7nNQ/0.jpg)](https://www.youtube.com/watch?v=lza6E4e7nNQ)
+
+# References
+
+- Chapman, C. n.d. Influence with Design: A Guide to Color and Emotions. [online]. Available at: https://www.toptal.com/designers/ux/colors - and - emotions [Accessed: 19 April 2024].
+
+- The IIE. 2024. Work Integrated Learning 1 [XHAW5112 Module Manual]. The Independent Institute of Education: Unpublished. 
+
