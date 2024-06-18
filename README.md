@@ -37,10 +37,32 @@ Matthew's wireframe and Quewin's logo was selected with colour corrections to de
 
 # Milestone 3 
 ## Design Changes
-Home Screen
+The following screens were changed to better match the colorscheme and eliminate some white space
+
+### Home Screen
 
 ![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe1.png "App Home Screen")
-![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe1_1.png "App Home Screen")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe1_1.png "Website Home Screen")
+
+### Course Summary
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe2.png "App Course Summary")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe2_1.png "Website Course Summary")
+
+### Course Details
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe3.png "App Course Details")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe3_1.png "Website Course Details")
+
+### Contact Screen
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe4.png "App Home Screen")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe4_1.png "Website Home Screen")
+
+### Calculate Screen
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe5.png "App Contact Screen")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe5_1.png "Website Contact Screen")
 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
