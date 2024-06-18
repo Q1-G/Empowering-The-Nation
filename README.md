@@ -1,3 +1,4 @@
+# Empowering the Nation
 This is Empowering the Nation, a ficticious app providing courses for individuals looking to improve themselves
 
 # Getting Started
