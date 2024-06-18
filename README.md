@@ -39,6 +39,11 @@ Matthew's wireframe and Quewin's logo was selected with colour corrections to de
 ## Design Changes
 The following screens were changed to better match the colorscheme and eliminate some white space
 
+### Logo
+Logo was redesigned with original colourscheme in mind, with adjustments to make it stand out
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/LogoTransparent.png "Redesigned Logo")
+
 ### Home Screen
 
 ![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe1.png "App Home Screen")
