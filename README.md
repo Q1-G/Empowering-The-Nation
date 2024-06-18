@@ -81,13 +81,21 @@ Logo was redesigned with original colourscheme in mind, with adjustments to make
 # using npm
 npm start
 
-#Select Android device
+# select Android device
 a
 
 ```
 2. Once App has compliled, see Home Screen
 
 3. Select either  "6 month" or "6 week" course to view options
+
+4. Select desired course
+
+5. Click "Add to Quote" Button
+
+6. Continue to cart or return to add items
+
+7. Complete Quote form fields and click "Calculate"
  
 
 ## Youtube Link
