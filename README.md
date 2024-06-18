@@ -1,6 +1,19 @@
 # Empowering the Nation
 This is Empowering the Nation, a ficticious app providing courses for individuals looking to improve themselves
 
+
+
+## Requirements
+
+## Team Behind App
+This app was created by the following:
+-Erika - ST10341302
+-Jamie - ST10248714
+-Matthew - ST10297294
+-Quewin - ST10056112
+-Zaid - ST10349417
+-Ziyaad - ST10349359
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
