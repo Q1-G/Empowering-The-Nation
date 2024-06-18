@@ -35,6 +35,9 @@ These screens were required on both app and website. Navigation required each sc
 Team reviewed each proposed wireframe and logo, deciding on a single wireframe and logo to base design. 
 Matthew's wireframe and Quewin's logo was selected with colour corrections to design
 
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/oldWireframe.png "App Home Screen")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/Originallogonotext.png "Website Home Screen")
+
 # Milestone 3 
 ## Design Changes
 The following screens were changed to better match the colorscheme and eliminate some white space
