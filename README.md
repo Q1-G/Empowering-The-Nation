@@ -73,15 +73,22 @@ Logo was redesigned with original colourscheme in mind, with adjustments to make
 # Milestone 4
 ## How To Use App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) before proceeding.
+>**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) before proceeding and a linked android device/Virtual Emulator
 
-First, you will need to start **Metro**, run the following command:
+1. First, you will need to start **Metro**, run the following command:
 
 ```bash
 # using npm
 npm start
 
+#Select Android device
+a
+
 ```
+2. Once App has compliled, see Home Screen
+
+3. Select either  "6 month" or "6 week" course to view options
+ 
 
 ## Youtube Link
 
