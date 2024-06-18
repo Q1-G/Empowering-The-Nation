@@ -1,5 +1,5 @@
 # Empowering the Nation
-This is Empowering the Nation, a ficticious app providing courses for individuals looking to improve themselves
+This is Empowering the Nation, a ficticious app providing courses for individuals looking to improve themselves.
 
 ## Team Behind App
 This app was created by the following:
@@ -10,8 +10,25 @@ This app was created by the following:
 - Zaid - ST10349417
 - Ziyaad - ST10349359
 
+# Milestone 1
+
 ## Requirements
 
+Empowering the Nation’s goal is to provide skill development opportunities for domestic workers and gardeners who may never have had the chance to complete a formal educational qualification
+
+To achieve this, the specifications requested was the creation of a mobile app and website that shared functionality and design. Users needed freedom to use either platform and have a positive UI/UX experience when navigating
+
+The following screens were required:
+
+- Home
+- Summary of six-month Courses
+- Summary of six-week Courses
+- Details of each six-month course (separate page/screen for each course)
+- Details of each six-month course (separate page/screen for each course)
+- Calculate Total Fees
+- Contact Details
+
+These screens were required on both app and website. Navigation 
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
