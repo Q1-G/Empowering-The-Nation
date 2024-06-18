@@ -42,7 +42,7 @@ The following screens were changed to better match the colorscheme and eliminate
 ### Logo
 Logo was redesigned with original colourscheme in mind, with adjustments to make it stand out
 
-![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/LogoTransparent.png "Redesigned Logo")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/TransparentLogo.png "Redesigned Logo")
 
 ### Home Screen
 
