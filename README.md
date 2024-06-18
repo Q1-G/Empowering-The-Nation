@@ -38,7 +38,8 @@ Matthew's wireframe and Quewin's logo was selected with colour corrections to de
 # Milestone 3 
 ## Design Changes
 Home Screen
-![alt text](image.jpg)
+
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/wireframe1.png "App Home Screen")
 
 
 
