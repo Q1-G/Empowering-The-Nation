@@ -36,7 +36,7 @@ Team reviewed each proposed wireframe and logo, deciding on a single wireframe a
 Matthew's wireframe and Quewin's logo was selected with colour corrections to design
 
 ![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/oldWireframe.png "App Home Screen")
-![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/Originallogonotext.png "Website Home Screen")
+![alt text](https://github.com/Q1-G/Empowering-The-Nation/blob/Troubleshoot/Assets/Originallogonotext.png "Original Logo")
 
 # Milestone 3 
 ## Design Changes
