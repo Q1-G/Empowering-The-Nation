@@ -20,8 +20,7 @@ To achieve this, the specifications requested was the creation of a mobile app a
 
 The following screens were required:
 
-- Home
--- Logo
+- Home (With Logo and About Us Text)
 - Summary of six-month Courses
 - Summary of six-week Courses
 - Details of each six-month course (separate page/screen for each course)
@@ -31,10 +30,17 @@ The following screens were required:
 
 These screens were required on both app and website. Navigation required each screen return to their previous page 
 
-## Submission
-
-Each member submitted a logo
 # Milestone 2
+## Submission
+Team reviewed each proposed wireframe and logo, deciding on a single wireframe and logo to base design. 
+Matthew's wireframe and Quewin's logo was selected with colour corrections to design
+
+# Milestone 3 
+## Design Changes
+Home Screen
+![alt text](image.jpg)
+
+
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
