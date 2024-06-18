@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is Empowering the Nation, a ficticious app providing courses for individuals looking to improve themselves
 
 # Getting Started
 
