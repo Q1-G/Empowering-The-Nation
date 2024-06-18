@@ -3,12 +3,12 @@ This is Empowering the Nation, a ficticious app providing courses for individual
 
 ## Team Behind App
 This app was created by the following:
--Erika - ST10341302
--Jamie - ST10248714
--Matthew - ST10297294
--Quewin - ST10056112
--Zaid - ST10349417
--Ziyaad - ST10349359
+- Erika - ST10341302
+- Jamie - ST10248714
+- Matthew - ST10297294
+- Quewin - ST10056112
+- Zaid - ST10349417
+- Ziyaad - ST10349359
 
 ## Requirements
 
