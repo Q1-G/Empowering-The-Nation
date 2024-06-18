@@ -101,13 +101,3 @@ a
 ## Youtube Link
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/lza6E4e7nNQ/0.jpg)](https://www.youtube.com/watch?v=lza6E4e7nNQ)
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-```
