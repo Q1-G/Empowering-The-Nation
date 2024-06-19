@@ -108,7 +108,7 @@ a
 ## Troubleshooting
 
 For compatibility reasons, the gradle build used was downgraded to 8.5 due to system errors.
-Following the below steps to reverse this:
+Please follow the below steps to reverse this:
 
 1. Navigate to ./android/gradle/wrapper in build files
 
