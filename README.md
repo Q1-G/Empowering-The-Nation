@@ -105,6 +105,28 @@ a
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/lza6E4e7nNQ/0.jpg)](https://www.youtube.com/watch?v=lza6E4e7nNQ)
 
+## Troubleshooting
+
+For compatibility reasons, the gradle build used was downgraded to 8.5 due to system errors.
+Following the below steps to reverse this:
+
+1. Navigate to ./android/gradle/wrapper in build files
+
+2. Open "gradle-wrapper.properties" file
+
+3. Find the following line of code:
+
+```
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.5-all.zip
+```
+4. Change "/gradle-8.5-all.zip" to version 8.6 or later
+
+```
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-all.zip
+```
+
+5. Run app as shown above
+
 # References
 
 - Chapman, C. n.d. Influence with Design: A Guide to Color and Emotions. [online]. Available at: https://www.toptal.com/designers/ux/colors - and - emotions [Accessed: 19 April 2024].
