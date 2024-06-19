@@ -11,20 +11,21 @@ import {
 const AboutScreen = ({navigation}) => {
   return (
     <SafeAreaView>
-     <ScrollView>
+    <ScrollView>
      <View style={styles.bgContainer}>
         <View style={styles.aboutContainer}>
           <Text style={styles.aboutText}>About Us </Text>
         </View>
-        <View style={styles.logocontainer}>
+        <View>
           <Image
             source={require('../Assets/TransparentLogo.png')}
             style={{
               resizeMode: 'center',
-              height: 150,
+              height: 140,
               width: '50',
             }}
           />
+           <View style={styles.logoTextContainer}>
           <Image
             source={require('../Assets/LogoText.png')}
             style={{
@@ -33,6 +34,7 @@ const AboutScreen = ({navigation}) => {
               width: '50',
             }}
           />
+          </View>
         </View>
 
         <View style={styles.detailsContainer}>
@@ -57,7 +59,7 @@ const AboutScreen = ({navigation}) => {
           </Text>
         </View>
         </View>
-              </ScrollView>
+        </ScrollView>
     </SafeAreaView>
   );
 };
@@ -73,7 +75,7 @@ const styles = StyleSheet.create({
 
   bgContainer:{
    backgroundColor: '#99A6E8',
-   height: 950,
+   height: 'auto',
   },
 
   aboutContainer: {
@@ -89,15 +91,9 @@ const styles = StyleSheet.create({
     left: '20%',
   },
 
-  logoContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '50%',
+  logoTextContainer: {
+marginBottom: -50,
   },
- 
- 
 
   detailsContainer: {
     width: '100%',
@@ -109,7 +105,8 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 16,
     marginBottom: 20,
-    color: 'white'
+    color: 'white',
+    textAlign: 'justify'
   },
 });
 
