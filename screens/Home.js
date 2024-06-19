@@ -75,9 +75,10 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    marginTop: 32,
+    paddingTop: 0,
+    paddingLeft: 10,
+    paddingRight: 10,
+    marginTop: 5,
   },
   
   sloganContainer: {
