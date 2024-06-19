@@ -5,12 +5,13 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
+  Image, ScrollView
 } from 'react-native';
 
 const AboutScreen = ({navigation}) => {
   return (
     <SafeAreaView>
+     <ScrollView>
      <View style={styles.bgContainer}>
         <View style={styles.aboutContainer}>
           <Text style={styles.aboutText}>About Us </Text>
@@ -56,6 +57,7 @@ const AboutScreen = ({navigation}) => {
           </Text>
         </View>
         </View>
+              </ScrollView>
     </SafeAreaView>
   );
 };
