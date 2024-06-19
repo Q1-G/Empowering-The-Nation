@@ -84,12 +84,12 @@ const styles = StyleSheet.create({
   sloganContainer: {
     backgroundColor: '#313b74',
     width: '100%',
-    padding: 10,
+    padding: 2,
   },
   sloganText: {
     color: 'white',
     fontWeight: 'bold',
-    padding: 20,
+    padding: 8,
     textAlign: 'center',
     fontStyle: 'italic'
 
@@ -99,12 +99,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 8,
     position: 'relative',
-    marginBottom: 50,
+    marginBottom: 2,
   },
  
   image: {
     width: '100%',
-    height: 210,
+    height: 200,
     resizeMode: 'cover',
   },
   buttonContainer: {
